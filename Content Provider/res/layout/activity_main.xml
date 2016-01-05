@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    tools:context=".MainActivity" >
+       
+     <EditText
+	 	android:id="@+id/getLastName"
+	 	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/getFirstName"
+	    android:layout_below="@+id/getFirstName"
+	    android:ems="10"
+	    android:hint="@string/last_name" />
+     
+     <EditText
+	 	android:id="@+id/getClass"
+	 	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/getLastName"
+	    android:layout_below="@+id/getLastName"
+	    android:ems="10"
+	    android:hint="@string/classe" />
+
+     <EditText
+         android:id="@+id/getFirstName"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="32dp"
+         android:ems="10"
+         android:hint="@string/first_name" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/getbtnAjouter"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:text="@string/add"
+         android:textColor="@android:color/holo_red_dark" />
+
+     <Button
+         android:id="@+id/getbtnSupp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/getbtnAjouter"
+         android:layout_marginTop="21dp"
+         android:text="@string/delete"
+         android:textColor="@android:color/holo_red_dark" />
+
+     <Button
+         android:id="@+id/getbtnSuppChamps"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/getbtnSupp"
+         android:layout_marginTop="24dp"
+         android:text="@string/deletechamps"
+         android:textColor="@android:color/holo_red_dark" />
+     
+</RelativeLayout>
